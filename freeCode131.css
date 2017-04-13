@@ -3,8 +3,12 @@
     padding:0;
 }
 .header_hd{
+    width:100%;
     height:80px;
     background-color:#722872;
+    position:fixed;
+    top:0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .header{
     height:80px;
@@ -37,12 +41,13 @@
 .header ul li a:hover{
     color:rgb(51,51,51);
 }
-.header ul li a:focus{
+#focus_a li a:focus{
     background-color:white;
 }
 
 .container{
     background-color:#888888;
+    margin-top:80px;
 }
 .container_1{
     width:1024px;
@@ -172,4 +177,13 @@
     line-height:1.5em;
     width:60px;
     margin-top:40px;
+}
+.footer{
+    height:80px;
+    background-color:#722872;
+    text-align:center;
+    line-height:80px;
+    color:white;
+    font-size:20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
