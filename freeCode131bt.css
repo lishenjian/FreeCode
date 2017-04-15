@@ -1,0 +1,206 @@
+#head {
+    height:80px;
+    background-color:#722872;
+    line-height:80px;
+    border-color:#722872;
+}
+#head img {
+    height:50px;
+}
+#head ul {
+    padding-top:20px;
+}
+.nav > li a{
+    padding: 10px 20px;
+}
+.container {
+    max-width: 1024px;
+    width:90%;
+}
+/*
+    在固定导航栏下面添加id为top的块空元素，宽度与导航栏相等
+    使导航栏下面的元素可以显示=== 可以用margin-top：导航栏宽度；代替
+*/
+#top {
+    height:80px;
+    display:block;
+}
+body {
+    background-color:#888;
+    font-size:20px;
+}
+
+.main_hd,#portfolio,#contact {
+    max-width:1024px;
+    margin:0 auto;
+    text-align:center;
+    background: #aaa;
+    color: #fff;
+    padding: 50px 10% 50px;
+}
+
+.main_hd div{
+    max-width:675px;
+    text-align: right;
+    float:left;
+}
+.main_hd img{
+    width:250px;
+    border-radius:50%;
+    text-align:bottom;
+}
+#main_hd_p {
+    font-size:23px;
+}
+#portfolio,#contact {
+    background-color:#eee;
+    color: #888;
+    padding: 40px 0px;
+    border-bottom: 2px solid #CECECE;
+}
+#contact h2,#portfolio h2{
+    font-weight:bold;
+    padding-bottom:30px;
+}
+
+#portfolio ul{
+    list-style:none;
+}
+
+#portfolio ul > li {
+    max-width:600px;
+    display: inline-block;
+    margin:20px;
+}
+
+#portfolio ul > li >img{
+    max-width:100%;
+}
+
+#contact form{
+    width:40%;
+    display:inline-block;
+}
+
+#contact form div {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bbb;
+}
+
+#contact form div:nth-child(4){
+    padding-bottom:100px;
+}
+
+#contact form div label{
+    display:block;
+    text-align:left;
+    opacity: 0;
+}
+
+#contact form div input{
+    font-size:1.5em;
+    border:0px;
+    background-color:#EEEEEE;
+    margin-left:-48px;
+}
+
+#contact form div:nth-child(4){
+    margin-bottom:30px;
+}
+#contact form button{
+    display:block;
+    text-align:left;
+}
+#contact > div {
+    width:38%;
+    display:inline-block;
+    text-align:left;
+    margin-left:50px;
+}
+
+#contact > div p:nth-child(1){
+    padding-bottom:35px;
+}
+
+#contact > div p:nth-child(2){
+    padding-bottom:170px;
+}
+
+#foot_icon{
+    color:white;
+    text-align:center;
+    background-color:#aaa;
+    
+}
+
+#foot_icon_id {
+    width:80%;
+    margin:0 auto;
+}
+
+#foot_icon_id div{
+    width: 50%;
+    float:left;
+    padding:0 50px;
+}
+
+#foot_icon_id div:nth-child(2) ul{
+    list-style:none;
+    padding-left:0px;
+    padding-bottom:6px;
+}
+
+#foot_icon_id div:nth-child(2) ul > li{
+    display:inline-block;
+}
+
+#foot_icon_id div:nth-child(2) a{
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 48px;
+}
+
+#foot_icon_id div:nth-child(2) a:hover{
+    color: #722872;
+    background-color: white;
+}
+
+#foot_icon_id h3 {
+    font-weight:bold;
+    padding-bottom:30px;
+}
+
+
+
+.footer{
+    height:80px;
+    background-color:#722872;
+    text-align:center;
+    line-height:80px;
+    color:white;
+    font-size:20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media (min-width: 1023px){
+    
+    .main_hd{ 
+        padding:50px 30px;
+    }
+    
+    .main_hd div{
+        max-width:610px;
+        padding-top:50px;
+    }
+    #portfolio ul > li {
+        max-width:420px;
+    }   
+
+}

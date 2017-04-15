@@ -1,0 +1,29 @@
+.screen{
+    height:380px;
+    margin:20px;
+    border:1px solid #E5E5E5;
+}
+.menu{
+    text-align:center;
+}
+.menu input{
+     border:1px solid #E5E5E5;
+     width:400px;
+     height:40px;
+     padding-left:10px;
+     border-radius:3px;
+     margin-bottom:10px;
+}
+.menu button{
+    width:160px;
+    height:40px;
+    border:1px solid #E5E5E5;
+    background-color:white;
+    margin:2px;
+    border-radius:3px;
+    color:#B0A8A5;
+}
+#sed{
+    border:1px solid red;
+    color:red;
+}
