@@ -27,3 +27,19 @@
     border:1px solid red;
     color:red;
 }
+
+.screen_show {
+    width:100%;
+    height:100%;
+}
+
+
+.screen_show div{
+    font-size: 22px;
+	line-height: 36px;
+	font-weight: 500;
+    color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
