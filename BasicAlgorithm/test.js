@@ -78,10 +78,11 @@ function repeat(str, num) {
   }
   else{
     for(;num > 0; num--){
-      newStr = newStr.concat(str);
+      //newStr = newStr.concat(str);     // 可行，性能不如 +=
+      newStr += str;
     }
     console.log(newStr);
-     return newStr;
+    return newStr;
   } 
  
   
@@ -89,3 +90,50 @@ function repeat(str, num) {
 
 repeat("abc", 3);
 
+
+
+
+/*
+ * 截断一个字符串！
+
+ * 如果字符串的长度比指定的参数num长，则把多余的部分用...来表示。
+
+ * 切记，插入到字符串尾部的三个点号也会计入字符串的长度。
+
+ * 但是，如果指定的参数num小于或等于3，则添加的三个点号不会计入字符串的长度。
+ 
+ */
+
+function truncate(str, num) {
+  // Clear out that junk in your trunk
+  if(num >= str.length){
+    return str;
+  }
+  else if(num > 3){
+    str = str.slice(0,num-3) + '...';
+  }
+  else{
+    str = str.slice(0,num) + '...';
+  }
+  return str;
+}
+
+truncate("A-tisket a-tasket A green and yellow basket", 11);
+
+
+
+function chunk(arr, size) {
+  // Break it up.
+  var newArr = [];
+  var i = 0;
+  for(var reLength = arr.length; reLength > size;){
+    newArr.push(arr.slice(i,i+size));
+    console.log(newArr);
+    reLength = reLength - size;
+    i +=size;
+  }
+    
+  return newArr;
+}
+
+chunk([0, 1, 2, 3, 4, 5], 4);
