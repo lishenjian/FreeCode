@@ -104,6 +104,9 @@ repeat("abc", 3);
  
  */
 
+
+
+
 function truncate(str, num) {
   // Clear out that junk in your trunk
   if(num >= str.length){
@@ -137,3 +140,89 @@ function chunk(arr, size) {
 }
 
 chunk([0, 1, 2, 3, 4, 5], 4);
+
+
+
+function mutation(arr) {
+  for(var i = 0; i < arr[1].length; i++){
+    
+    if(arr[0].toLowerCase().indexOf(arr[1].toLowerCase()[i],0) < 0){
+      console.log(arr[1][i]);
+      return false;
+    }
+     
+  }
+  return true;
+}
+
+mutation(["hello", "Hello"]);
+
+
+
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  function isTrue(value){
+    return value;
+  }
+
+  return arr.filter(isTrue);
+}
+
+bouncer([7, "ate", "", false, 9]);
+
+
+
+function destroyer(arr) {
+  var newArr = arguments;
+  function delArr(value){
+    for( var i = 1; i< newArr.length; i++){
+     if(value == newArr[i]){
+       return false;
+     }
+    }
+    return true;   
+  }
+  return arr.filter(delArr);
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+
+
+function where(arr, num) {
+  // Find my place in this sorted array.
+  arr.sort(function(a,b){
+    return a - b;
+  });
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] >= num){
+      arr.splice(i,0,num);
+      return i;
+    }
+  }
+}
+
+where([5, 3, 20, 3], 5);
+
+
+
+
+function rot13(str) { // LBH QVQ VG!
+  var newStr ='';
+  for(var i = 0; i<str.length; i++){
+    console.log(str.charCodeAt(i));
+    if(str.charCodeAt(i) >= 78 && str.charCodeAt(i) <= 90){
+      newStr +=(String.fromCharCode(str.charCodeAt(i) -13));
+      console.log(newStr);
+    }
+    else if(str.charCodeAt(i) >= 65 && str.charCodeAt(i) < 78){
+    newStr +=(String.fromCharCode(str.charCodeAt(i) + 13));
+    }
+    else{
+      newStr +=str[i];
+    }
+  }
+  return newStr;
+}
+
+rot13("SERR PBQR PNZC");
