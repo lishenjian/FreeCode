@@ -1,0 +1,77 @@
+body {
+    background-color: #333;
+}
+
+.quote {
+    background-color:white;
+    width: 450px;
+    margin:10% auto;
+    margin-bottom:30px;
+    padding: 50px;
+}
+.quote p{
+    text-align:center;
+    color:#333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height:1.5em;
+}
+
+.quote p i{
+    font-size:20px;
+}
+
+.quote p span{
+    font-size:20px;
+    padding-left:10px;
+}
+
+
+.quote p:nth-child(2) {
+    text-align:right;
+}
+
+.div_bt a, .div_bt button{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-color: #333;
+    color:white;
+    line-height:30px;
+    text-align:center;
+    border-radius:4px;
+}
+.div_bt{
+    height:50px;
+}
+.div_bt button{
+    height:30px;
+    width:100px;
+    float:right;
+    border:none;
+    background-color:#333;
+    color:white;
+    border-radius:4px;
+}
+
+.author {
+    text-align:center;
+}
+
+.author a{
+    color:white;
+    text-decoration: none;
+}
+
+.author a:visited {
+    color:white;
+    text-decoration:none;
+}
+.author a:hover {
+    color:white;
+    text-decoration:none;
+}
+
+.author a:active {
+    color:white;
+    text-decoration:none;
+}
