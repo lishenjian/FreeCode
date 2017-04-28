@@ -1,0 +1,32 @@
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.weather_hd {
+    height:60px;
+    width:260px;
+    text-align:center;
+    line-height:60px;
+    margin: 0px auto;
+}
+.weather_hd div{
+    height:60px;
+    float:left;
+}
+.weather_hd span{
+    float:left;
+}
+
+.weather_dt, .wt_future {
+    text-align:center;
+    border-top:1px solid #eee;
+    margin:30px 150px;
+    padding-top:30px;
+}
+
+.weather_dt p {
+    margin:10px;
+}
