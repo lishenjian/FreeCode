@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding:0px;
+    font-family: "microsoft yahei";
+}
+
+
+.wiki_img {
+    margin-top:100px;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+.search_tex {
+    width:80%;
+    height:40px;
+    margin: 0px auto;
+    border:1px solid #FF7777;
+}
+.search_tex input {
+    width:78%;
+    height:40px;
+    padding: 0px 1%;
+    border:none;
+}
+
+.search_tex button {
+    width:20%;
+    height:40px;
+    border: none;
+    background-color:#FF7777;
+    margin-left:-0.5%;
+}
+
+.resultlist {
+    list-style:none;
+}
+
+.search_rst {
+    width:80%;
+    margin:0px auto;
+}
+.clear {
+    clear:both;
+}
+
+.addClass {
+    width:98%;
+    margin-top:5px;
+    border:1px solid #FF7777;
+    padding:1%;
+}
+.addClass li{
+    border-bottom:1px dotted #ddd;
+    padding-bottom:10px;
+    list-style-type: decimal;
+    list-style-position:inside;
+}
+.addClass li h3{
+    padding-bottom:2px;
+    display:inline-block;
+    text-align:left;
+}
+
+.addClass li img{
+    float:left;
+    margin-right:5px;
+    
+}
+
+.addClass li p{
+    font-size:10px;
+    padding-left:17px;
+}
