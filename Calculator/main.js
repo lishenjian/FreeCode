@@ -11,12 +11,14 @@ function myClick(){
         case "AC":
             {
                 result.innerHTML = '';
+                reStr = '';
                 break;
             }
         case "CE":
             {
-                var length = result.innerHTML.length;
-                result.innerHTML = result.innerHTML.slice(0,length-1);
+                var length = reStr.length;
+                reStr = reStr.slice(0,length-1);
+                result.innerHTML = reStr;
                 console.log(result.innerHTML);
                 break;
             }
