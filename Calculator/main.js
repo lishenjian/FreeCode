@@ -12,6 +12,7 @@ function myClick(){
             {
                 result.innerHTML = '';
                 reStr = '';
+                console.log(reStr);
                 break;
             }
         case "CE":
@@ -32,6 +33,7 @@ function myClick(){
                 break;
             }
         default:
+            console.log(reStr);
             reStr += this.innerHTML;
             result.innerHTML = reStr;
             console.log(result.innerHTML);
