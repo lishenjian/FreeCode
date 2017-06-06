@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #56351E;
+}
+
+.cal{
+    width:300px;
+    height:350px;
+    margin:auto;
+    margin-top:10%;
+    text-align:center;
+    background-color: #C47335;
+    padding: 5px;
+    border-radius: 10px;
+}
+p:nth-child(1){
+    font-family: 'Oleo Script', cursive;
+    margin-top: 10px;
+    color: #F19953;
+}
+
+p:nth-child(2){
+    width: 275px;
+    height:25px;
+    background-color: #F19953;
+    margin:10px auto;
+    text-align: right;
+    line-height: 25px;
+}
+.button{
+    width: 275px;
+    margin:10px auto;
+}
+
+button {
+    float:left;
+    width: 64.75px;
+    height:50px;
+    color: #f19953;
+    background-color: white;
+    border:none;
+    margin: 2px;
+}
