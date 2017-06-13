@@ -48,10 +48,19 @@ button:hover,.count:hover {
     border: 2px solid #99CC00;
     border-radius: 50%;
     position: relative;
+    overflow: hidden;
 }
 
 .count p {
     height: 150px;
     line-height:150px;
     font-size: 50px;
+}
+#boxBgColor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 10%;
+    z-index: -1;
 }
