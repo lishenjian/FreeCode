@@ -80,17 +80,8 @@ window.onload = function(){
     function intervalFunc() {
         var showTxt;
         var timeHour, timeMin, timeSec;
-  
-        showBgHt = (1-showTime/countNum)*100 + '%';
-        countById.style.height = showBgHt;
 
-        //根据文本显示添加span 不同 背景色
-        if(textP.innerHTML == "Session"){      
-            countById.style.backgroundColor = "#99CC00";
-        }
-        else{
-            countById.style.backgroundColor = "red";
-        }
+       
 
         if(showTime == 0){
             
@@ -106,17 +97,33 @@ window.onload = function(){
         }
         showTime--;
 
-
         //时间显示文本计算： 通过秒数 计算 时、分、秒
         timeHour = Math.floor(showTime/(60*60))%24;
         timeMin  = Math.floor(showTime/60)%60;
         timeSec  = Math.floor(showTime)%60;
-
+    
         if(timeSec < 10){
             timeSec = '0' + timeSec;
         }
         timeShow.innerHTML = '' + (timeHour?(timeHour+":"):'') + timeMin + ":" + timeSec;
         console.log(timeShow.innerHTML);
+
+
+        console.log(showTime);
+        console.log(countNum);
+       //计算背景span  高度占百分比
+        showBgHt = (1-showTime/countNum)*100 + '%';
+        countById.style.height = showBgHt;
+
+        //根据文本显示添加span 不同 背景色
+        if(textP.innerHTML == "Session"){      
+            countById.style.backgroundColor = "#99CC00";
+        }
+        else{
+            countById.style.backgroundColor = "red";
+        }
+
+
     }
 
     //set 进程
